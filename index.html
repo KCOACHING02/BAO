@@ -2,126 +2,111 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Toolbox Créateur Digital</title>
+    <title>Audit Interactif - Créateur Digital</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
-        .gradient-bg { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
-        .card-hover:hover { transform: translateY(-5px); transition: all 0.3s ease; }
+        .check-item { transition: all 0.2s; border-left: 4px solid #e2e8f0; }
+        .check-item:hover { border-left-color: #6366f1; background: #f8fafc; }
     </style>
 </head>
-<body class="bg-gray-50 font-sans text-gray-900">
+<body class="bg-slate-100 p-4 md:p-10 font-sans">
 
-    <header class="gradient-bg text-white py-10 px-6 text-center shadow-lg">
-        <h1 class="text-3xl md:text-5xl font-bold mb-2 uppercase tracking-tight">La Bible du Créateur</h1>
-        <p class="text-lg opacity-90">De l'Attention à la Conversion : Votre Système de Vente Interactif</p>
-    </header>
+    <div class="max-w-4xl mx-auto">
+        <header class="mb-10">
+            <h1 class="text-3xl font-black text-indigo-900 uppercase">Outil d'Audit Stratégique</h1>
+            <p class="text-gray-600">Transformez votre présence selon les principes de la Bible du Créateur.</p>
+        </header>
 
-    <main class="max-w-6xl mx-auto p-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-
-        <section class="bg-white p-6 rounded-2xl shadow-md border-t-4 border-indigo-500 card-hover">
-            <div class="flex items-center mb-4 text-indigo-600">
-                <i class="fas fa-id-card text-2xl mr-3"></i>
-                <h2 class="text-xl font-bold uppercase">L'Architecture du Profil</h2>
-            </div>
-            <p class="text-sm text-gray-600 mb-4">Votre profil est votre landing page. Testez-le en 2 secondes.</p>
-            <ul class="space-y-3">
-                <li class="p-2 bg-gray-50 rounded border-l-2 border-indigo-300 text-sm italic">
-                    <strong>SEO :</strong> Nom avec mots-clés (ex: Coach Fitness Paris).
-                </li>
-                <li class="p-2 bg-gray-50 rounded border-l-2 border-indigo-300 text-sm">
-                    <strong>Bio :</strong> "J'aide [Cible] à [Résultat] via [Méthode]".
-                </li>
-                <li class="p-2 bg-red-50 rounded border-l-2 border-red-300 text-sm font-semibold">
-                    <strong>Règle d'or :</strong> 1 seul lien (CTA unique). La confusion tue la conversion.
-                </li>
-            </ul>
-        </section>
-
-        <section class="bg-white p-6 rounded-2xl shadow-md border-t-4 border-purple-500 card-hover">
-            <div class="flex items-center mb-4 text-purple-600">
-                <i class="fas fa-fish text-2xl mr-3"></i>
-                <h2 class="text-xl font-bold uppercase">L'Art de l'Accroche</h2>
-            </div>
+        <div class="bg-white rounded-xl shadow-lg p-6 mb-8">
+            <h2 class="text-xl font-bold mb-4 flex items-center">
+                <span class="bg-indigo-600 text-white rounded-full h-8 w-8 flex items-center justify-center mr-3 text-sm">01</span>
+                Audit du Profil (Landing Page)
+            </h2>
+            
             <div class="space-y-4">
-                <div class="p-3 bg-purple-50 rounded-lg">
-                    <p class="text-xs font-bold text-purple-700 uppercase mb-1 underline">Formule Gagnante</p>
-                    <p class="text-sm font-medium">Chiffre + Résultat Précis + Durée / Curiosité</p>
+                <div class="p-4 bg-blue-50 rounded-lg">
+                    <label class="block text-sm font-bold text-blue-900 mb-2">Testez votre Bio :</label>
+                    <input type="text" id="bioInput" placeholder="J'aide les... à... via..." 
+                           class="w-full p-3 rounded border border-blue-200 focus:ring-2 focus:ring-indigo-500 outline-none">
+                    <p id="bioFeedback" class="mt-2 text-xs font-medium"></p>
                 </div>
-                <div class="text-sm space-y-2">
-                    <p>✅ "Les 3 choses qui m'ont fait perdre 5kg en 2 mois"</p>
-                    <p>✅ "L'erreur qui empêche 80% des entrepreneurs de réussir"</p>
-                </div>
-            </div>
-        </section>
 
-        <section class="bg-white p-6 rounded-2xl shadow-md border-t-4 border-pink-500 card-hover">
-            <div class="flex items-center mb-4 text-pink-600">
-                <i class="fas fa-layer-group text-2xl mr-3"></i>
-                <h2 class="text-xl font-bold uppercase">La Science du Contenu</h2>
-            </div>
-            <div class="bg-gray-100 p-4 rounded-lg flex justify-between text-center font-bold text-xs">
-                <div class="w-1/3 border-r border-gray-300">ACCROCHE<br><span class="font-normal">(3 sec)</span></div>
-                <div class="w-1/3 border-r border-gray-300 uppercase">Valeur<br><span class="font-normal">Actionnable</span></div>
-                <div class="w-1/3 uppercase text-pink-600">Action<br><span class="font-normal">CTA Unique</span></div>
-            </div>
-            <p class="mt-4 text-xs text-gray-500">Chaque phrase doit soit éduquer, soit émouvoir, soit pousser à l'action.</p>
-        </section>
-
-        <section class="bg-white p-6 rounded-2xl shadow-md border-t-4 border-orange-500 card-hover lg:col-span-2">
-            <div class="flex items-center mb-4 text-orange-600">
-                <i class="fas fa-bolt text-2xl mr-3"></i>
-                <h2 class="text-xl font-bold uppercase">Séquence Story : Point A → Point B</h2>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-                <div class="p-3 border rounded-lg">
-                    <span class="text-orange-600 font-bold block mb-1">1. Le Problème</span>
-                    <p class="text-xs">Identifiez la douleur ou la frustration précise du client (Point A).</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <label class="check-item p-3 flex items-center bg-white rounded cursor-pointer">
+                        <input type="checkbox" class="mr-3 h-5 w-5 text-indigo-600">
+                        <span class="text-sm">Nom SEO : Mots-clés inclus ? [cite: 41, 42]</span>
+                    </label>
+                    <label class="check-item p-3 flex items-center bg-white rounded cursor-pointer">
+                        <input type="checkbox" class="mr-3 h-5 w-5 text-indigo-600">
+                        <span class="text-sm">Un seul lien CTA unique ? [cite: 48, 50]</span>
+                    </label>
                 </div>
-                <div class="p-3 border rounded-lg bg-orange-50">
-                    <span class="text-orange-600 font-bold block mb-1">2. Le Déclic</span>
-                    <p class="text-xs">Changement de perspective. Présentez la transformation.</p>
-                </div>
-                <div class="p-3 border rounded-lg">
-                    <span class="text-orange-600 font-bold block mb-1">3. Le Résultat</span>
-                    <p class="text-xs">Preuve tangible + CTA direct vers votre offre (Point B).</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="bg-gray-800 text-white p-6 rounded-2xl shadow-md border-t-4 border-green-400 card-hover lg:col-span-1">
-            <div class="flex items-center mb-4 text-green-400">
-                <i class="fas fa-chart-line text-2xl mr-3"></i>
-                <h2 class="text-xl font-bold uppercase text-white">Audit & KPIs</h2>
-            </div>
-            <div class="space-y-2 text-sm">
-                <div class="flex justify-between border-b border-gray-700 pb-1">
-                    <span>Portée :</span> <span class="text-green-400">Vues / Partages</span>
-                </div>
-                <div class="flex justify-between border-b border-gray-700 pb-1">
-                    <span>Engagement :</span> <span class="text-green-400">Enregistrements</span>
-                </div>
-                <div class="flex justify-between border-b border-gray-700 pb-1 font-bold">
-                    <span>Conversion :</span> <span class="text-yellow-400 underline">Clics / Mots-clés</span>
-                </div>
-            </div>
-            <p class="text-[10px] mt-4 opacity-70 italic text-center uppercase tracking-widest">Auditez tous les 1-2 mois</p>
-        </section>
-
-    </main>
-
-    <footer class="max-w-6xl mx-auto p-6 mb-10">
-        <div class="bg-indigo-900 text-white p-8 rounded-3xl text-center shadow-2xl">
-            <h3 class="text-2xl font-bold mb-4">"Le perfectionnisme est l'ennemi de l'action."</h3>
-            <p class="mb-6 opacity-80">Commencez imparfaitement aujourd'hui plutôt que parfaitement demain.</p>
-            <div class="flex flex-wrap justify-center gap-4 text-xs font-bold uppercase tracking-widest">
-                <span class="px-4 py-2 border border-white rounded-full">Auditer Profil</span>
-                <span class="px-4 py-2 border border-white rounded-full">Créer 3 Réels</span>
-                <span class="px-4 py-2 border border-white rounded-full">Séquence Stories</span>
             </div>
         </div>
-    </footer>
 
+        <div class="bg-white rounded-xl shadow-lg p-6 mb-8 border-l-8 border-purple-500">
+            <h2 class="text-xl font-bold mb-4">Analyseur de Hook (Accroche)</h2>
+            <div class="space-y-4">
+                <textarea id="hookInput" rows="2" placeholder="Tapez votre accroche ici..." 
+                          class="w-full p-4 bg-gray-50 border rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-400"></textarea>
+                
+                <div id="hookAnalysis" class="grid grid-cols-2 md:grid-cols-4 gap-2 text-center">
+                    <div id="hasNumber" class="p-2 rounded bg-gray-100 text-[10px] font-bold uppercase">Chiffre ❌</div>
+                    <div id="isSpecific" class="p-2 rounded bg-gray-100 text-[10px] font-bold uppercase">Spécifique ?</div>
+                    <div id="hasResult" class="p-2 rounded bg-gray-100 text-[10px] font-bold uppercase">Résultat ?</div>
+                    <div id="hasCuriosity" class="p-2 rounded bg-gray-100 text-[10px] font-bold uppercase">Curiosité ?</div>
+                </div>
+                <p class="text-xs text-gray-500 italic">"La spécificité bat toujours la généralité." [cite: 60]</p>
+            </div>
+        </div>
+
+        <div class="bg-white rounded-xl shadow-lg p-6">
+            <h2 class="text-xl font-bold mb-4 italic">Séquence Story "Vente"</h2>
+            <div class="space-y-2">
+                <div class="flex items-start p-3 border-b">
+                    <span class="font-bold text-indigo-600 mr-4">Slide 1</span>
+                    <p class="text-sm"><strong>Point A :</strong> Avez-vous exposé un problème ou une douleur précise ? [cite: 140, 141]</p>
+                </div>
+                <div class="flex items-start p-3 border-b">
+                    <span class="font-bold text-indigo-600 mr-4">Slide 2</span>
+                    <p class="text-sm"><strong>Le Déclic :</strong> Avez-vous partagé un changement de perspective ? [cite: 142, 143]</p>
+                </div>
+                <div class="flex items-start p-3">
+                    <span class="font-bold text-indigo-600 mr-4">Slide 3</span>
+                    <p class="text-sm"><strong>Point B :</strong> Preuve tangible + Appel à l'action direct ? [cite: 144, 145]</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Logique de validation de la Bio
+        document.getElementById('bioInput').addEventListener('input', function(e) {
+            const val = e.target.value.toLowerCase();
+            const feedback = document.getElementById('bioFeedback');
+            if(val.includes('aide') && val.includes('via')) {
+                feedback.innerText = "✅ Structure validée ! (J'aide... à... via...)";
+                feedback.className = "mt-2 text-xs font-bold text-green-600";
+            } else {
+                feedback.innerText = "❌ Structure recommandée : J'aide [Cible] à [Résultat] via [Méthode]";
+                feedback.className = "mt-2 text-xs font-bold text-red-500";
+            }
+        });
+
+        // Logique d'analyse d'accroche
+        document.getElementById('hookInput').addEventListener('input', function(e) {
+            const val = e.target.value;
+            const hasNum = /\d/.test(val);
+            const numEl = document.getElementById('hasNumber');
+            
+            if(hasNum) {
+                numEl.innerText = "Chiffre ✅";
+                numEl.className = "p-2 rounded bg-green-100 text-green-700 text-[10px] font-bold uppercase";
+            } else {
+                numEl.innerText = "Chiffre ❌";
+                numEl.className = "p-2 rounded bg-red-100 text-red-700 text-[10px] font-bold uppercase";
+            }
+        });
+    </script>
 </body>
 </html>
