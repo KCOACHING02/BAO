@@ -3,145 +3,312 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BIBLE CRÉATEUR - Dashboard</title>
+    <title>La Bible du Créateur Digital - Intégrale</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&display=swap');
-        body { font-family: 'Space Grotesk', sans-serif; background-color: #0f172a; color: #f8fafc; }
-        .glass-card { background: rgba(30, 41, 59, 0.7); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); }
-        .accent-gradient { background: linear-gradient(90deg, #6366f1 0%, #a855f7 100%); }
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap');
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #0b0f1a; color: #e2e8f0; scroll-behavior: smooth; }
+        .glass { background: rgba(23, 32, 53, 0.8); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.1); }
+        .gradient-text { background: linear-gradient(90deg, #6366f1, #a855f7); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .chapter-card { transition: transform 0.3s ease; }
+        .chapter-card:hover { transform: translateY(-5px); }
+        .sticky-nav { position: sticky; top: 0; z-index: 100; border-bottom: 1px solid rgba(255,255,255,0.1); }
     </style>
 </head>
 <body class="antialiased">
 
-    <nav class="sticky top-0 z-50 glass-card px-6 py-4 flex justify-between items-center mb-8">
-        <span class="font-bold tracking-widest text-indigo-400">LA BIBLE DU CRÉATEUR</span>
-        <div class="flex space-x-4">
-            <i class="fas fa-bolt text-yellow-400"></i>
-            <i class="fas fa-chart-pie text-indigo-400"></i>
+    <header class="min-h-screen flex flex-col justify-center items-center text-center px-6 border-b border-white/5">
+        <div class="mb-4 px-4 py-1 rounded-full bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 text-sm font-bold tracking-widest uppercase">
+            Guide Stratégique Complet
+        </div>
+        <h1 class="text-5xl md:text-8xl font-black mb-6 leading-tight">
+            LA BIBLE DU <br><span class="gradient-text">CRÉATEUR DIGITAL</span>
+        </h1>
+        <p class="text-xl md:text-2xl text-slate-400 max-w-2xl font-light">
+            De l'Attention à la Conversion : Transformez votre présence en <span class="text-white font-semibold underline decoration-indigo-500">machine à vendre</span>. [cite: 2, 4]
+        </p>
+        <div class="mt-12 animate-bounce">
+            <a href="#sommaire" class="text-slate-500 hover:text-white transition"><i class="fas fa-chevron-down text-2xl"></i></a>
+        </div>
+    </header>
+
+    <nav id="sommaire" class="max-w-5xl mx-auto py-20 px-6">
+        <h2 class="text-3xl font-bold mb-12 text-center">Votre Parcours Vers le <span class="text-indigo-500">Succès</span> </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <a href="#ch1" class="glass p-6 rounded-3xl chapter-card">
+                <span class="text-indigo-500 font-bold text-sm">01</span>
+                <h3 class="text-xl font-bold mt-2">Architecture du Profil [cite: 17]</h3>
+                <p class="text-sm text-slate-400 mt-2">Captez et convainquez en 2 secondes. [cite: 18]</p>
+            </a>
+            <a href="#ch2" class="glass p-6 rounded-3xl chapter-card">
+                <span class="text-indigo-500 font-bold text-sm">02</span>
+                <h3 class="text-xl font-bold mt-2">L'Art de l'Accroche [cite: 20]</h3>
+                <p class="text-sm text-slate-400 mt-2">Maîtrisez les techniques de hooking. [cite: 21]</p>
+            </a>
+            <a href="#ch3" class="glass p-6 rounded-3xl chapter-card">
+                <span class="text-indigo-500 font-bold text-sm">03</span>
+                <h3 class="text-xl font-bold mt-2">La Science du Contenu [cite: 23]</h3>
+                <p class="text-sm text-slate-400 mt-2">Réels et posts qui convertissent. [cite: 26]</p>
+            </a>
+            <a href="#ch4" class="glass p-6 rounded-3xl chapter-card">
+                <span class="text-indigo-500 font-bold text-sm">04</span>
+                <h3 class="text-xl font-bold mt-2">Vente en Story [cite: 25]</h3>
+                <p class="text-sm text-slate-400 mt-2">Séquences narratives pour clients payants. [cite: 26]</p>
+            </a>
+            <a href="#ch5" class="glass p-6 rounded-3xl chapter-card">
+                <span class="text-indigo-500 font-bold text-sm">05</span>
+                <h3 class="text-xl font-bold mt-2">Psychologie & Vente [cite: 29]</h3>
+                <p class="text-sm text-slate-400 mt-2">Les déclencheurs mentaux de l'action. [cite: 29]</p>
+            </a>
+            <a href="#ch6" class="glass p-6 rounded-3xl chapter-card">
+                <span class="text-indigo-500 font-bold text-sm">06</span>
+                <h3 class="text-xl font-bold mt-2">Audit & Optimisation [cite: 30]</h3>
+                <p class="text-sm text-slate-400 mt-2">Améliorez vos performances stratégiques. [cite: 30]</p>
+            </a>
         </div>
     </nav>
 
-    <main class="max-w-2xl mx-auto px-4 pb-20">
-        
-        <header class="text-center mb-12">
-            <h1 class="text-4xl font-black mb-4 uppercase leading-none">Transforme ta présence en <br><span class="text-indigo-500 italic">Machine à Vendre.</span></h1>
-            <p class="text-slate-400 text-sm">Le guide stratégique complet pour dominer l'algorithme.</p>
-        </header>
+    <div class="max-w-4xl mx-auto px-6 space-y-32 pb-40">
 
-        <div class="glass-card rounded-3xl p-6 mb-6">
-            <div class="flex items-center mb-6">
-                <div class="w-10 h-10 accent-gradient rounded-xl flex items-center justify-center mr-4">
-                    <i class="fas fa-user-check text-white"></i>
-                </div>
-                <h2 class="text-xl font-bold uppercase tracking-tight">01. Profil (Landing Page)</h2>
-            </div>
-            
-            <div class="space-y-4">
-                <div class="p-4 bg-slate-800/50 rounded-2xl border-l-4 border-indigo-500">
-                    <p class="text-xs uppercase text-indigo-400 font-bold mb-1">Optimisation SEO</p>
-                    <p class="text-sm">Inclus des mots-clés dans ton nom (ex: Coach Fitness + Nom).</p>
-                </div>
-                <div class="p-4 bg-slate-800/50 rounded-2xl border-l-4 border-indigo-500">
-                    <p class="text-xs uppercase text-indigo-400 font-bold mb-1">La Formule Bio</p>
-                    <p class="text-md font-medium">"J'aide [Cible] à [Résultat] via [Méthode]"</p>
-                </div>
-                <div class="p-4 bg-red-500/10 rounded-2xl border border-red-500/30 text-red-400">
-                    <p class="text-xs font-bold uppercase">Règle d'or</p>
-                    <p class="text-sm italic">Un seul lien. La confusion tue la vente.</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="glass-card rounded-3xl p-6 mb-6">
-            <div class="flex items-center mb-6">
-                <div class="w-10 h-10 bg-purple-600 rounded-xl flex items-center justify-center mr-4">
-                    <i class="fas fa-magnet text-white"></i>
-                </div>
-                <h2 class="text-xl font-bold uppercase tracking-tight">02. L'Art de l'Accroche</h2>
-            </div>
-            <p class="text-sm text-slate-400 mb-4 italic">"La spécificité bat toujours la généralité."</p>
-            <div class="grid grid-cols-2 gap-3">
-                <div class="p-3 bg-slate-800 rounded-xl text-center">
-                    <p class="text-lg font-bold">Chiffres</p>
-                    <p class="text-[10px] text-slate-500 uppercase italic underline">Preuve Tangible</p>
-                </div>
-                <div class="p-3 bg-slate-800 rounded-xl text-center">
-                    <p class="text-lg font-bold">Curiosité</p>
-                    <p class="text-[10px] text-slate-500 uppercase italic underline">Information Gap</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="glass-card rounded-3xl p-6 mb-6 border-2 border-indigo-500/30">
-            <div class="flex items-center mb-6">
-                <div class="w-10 h-10 bg-orange-500 rounded-xl flex items-center justify-center mr-4 shadow-lg shadow-orange-500/20">
-                    <i class="fas fa-play text-white"></i>
-                </div>
-                <h2 class="text-xl font-bold uppercase tracking-tight">03. Séquence Story Vente</h2>
-            </div>
-            <div class="flex flex-col space-y-4">
-                <div class="flex items-start">
-                    <span class="text-indigo-500 font-black text-2xl mr-4">A</span>
-                    <div>
-                        <p class="font-bold">Le Problème</p>
-                        <p class="text-sm text-slate-400 italic font-light">Expose la douleur précise de ton client idéal.</p>
+        <section id="ch1" class="scroll-mt-24">
+            <h2 class="text-4xl font-black mb-8 border-l-4 border-indigo-500 pl-6 uppercase">01. L'Architecture du Profil [cite: 34]</h2>
+            <div class="glass p-8 rounded-3xl space-y-6">
+                <p class="text-lg italic text-indigo-300 font-light">"Votre profil est votre landing page." [cite: 36]</p>
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="p-4 bg-white/5 rounded-2xl">
+                        <h4 class="font-bold text-indigo-400 mb-2">Le Nom (SEO) [cite: 41]</h4>
+                        <p class="text-sm text-slate-300">Intégrez des mots-clés (ex: "Coach Fitness Paris"). C'est l'un des rares éléments indexés par la recherche. [cite: 42, 43, 44]</p>
+                    </div>
+                    <div class="p-4 bg-white/5 rounded-2xl">
+                        <h4 class="font-bold text-indigo-400 mb-2">La Biographie [cite: 45]</h4>
+                        <p class="text-sm text-slate-300">Structure gagnante : "J'aide les [cible] à [résultat] via [méthode]". Répondez à : Qui ? Comment ? Quel résultat ? [cite: 46, 47]</p>
+                    </div>
+                    <div class="p-4 bg-white/5 rounded-2xl">
+                        <h4 class="font-bold text-indigo-400 mb-2">CTA Unique [cite: 48]</h4>
+                        <p class="text-sm text-slate-300">Un seul lien vers une offre. Ne proposez jamais 5 liens différents, la confusion tue la conversion. [cite: 49, 50]</p>
                     </div>
                 </div>
-                <div class="flex items-start">
-                    <span class="text-indigo-500 font-black text-2xl mr-4">!</span>
-                    <div>
-                        <p class="font-bold">Le Déclic</p>
-                        <p class="text-sm text-slate-400 italic font-light">Le changement de perspective (transformation).</p>
+                <p class="text-sm text-slate-400">Un visiteur décide en moyenne en 2 secondes s'il s'abonne ou s'il quitte. [cite: 37]</p>
+            </div>
+        </section>
+
+        <section id="ch2" class="scroll-mt-24">
+            <h2 class="text-4xl font-black mb-8 border-l-4 border-purple-500 pl-6 uppercase">02. L'Art de l'Accroche [cite: 54]</h2>
+            <div class="glass p-8 rounded-3xl space-y-8">
+                <p class="text-lg">"Si votre accroche échoue, tout le reste de votre contenu n'existe tout simplement pas." [cite: 56]</p>
+                <div class="bg-purple-500/10 p-6 rounded-2xl border border-purple-500/20">
+                    <h3 class="font-bold text-purple-400 mb-4 uppercase tracking-wider text-sm">Les 3 Piliers du Hooking</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-start gap-4">
+                            <span class="text-2xl font-black text-purple-500">01</span>
+                            <p><strong>Le Chiffre d'Or :</strong> Les chiffres transforment une promesse abstraite en résultat tangible (ex: "5kg en 2 mois"). [cite: 66, 67, 68]</p>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <span class="text-2xl font-black text-purple-500">02</span>
+                            <p><strong>Le Résultat Précis :</strong> Annoncez un bénéfice concret. "Voici l'erreur qui empêche 80% des entrepreneurs de réussir." [cite: 70, 71]</p>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <span class="text-2xl font-black text-purple-500">03</span>
+                            <p><strong>La Curiosité Forte :</strong> Créez un gap d'information irrésistible. "Avant de faire ça, je n'arrivais pas à..." [cite: 73]</p>
+                        </div>
                     </div>
                 </div>
-                <div class="flex items-start">
-                    <span class="text-indigo-500 font-black text-2xl mr-4">B</span>
-                    <div>
-                        <p class="font-bold">Le Résultat (CTA)</p>
-                        <p class="text-sm text-slate-400 italic font-light">Appel à l'action direct et mesurable.</p>
+                <p class="text-center font-bold text-purple-400">LA SPÉCIFICITÉ BAT TOUJOURS LA GÉNÉRALITÉ. [cite: 60]</p>
+            </div>
+        </section>
+
+        <section id="ch3" class="scroll-mt-24">
+            <h2 class="text-4xl font-black mb-8 border-l-4 border-pink-500 pl-6 uppercase">03. La Science du Contenu [cite: 76]</h2>
+            <div class="space-y-8">
+                <div class="glass p-8 rounded-3xl">
+                    <h3 class="text-xl font-bold mb-6 text-pink-400 uppercase">Structure du Réel Parfait [cite: 80]</h3>
+                    <div class="flex flex-col md:flex-row gap-4 text-center">
+                        <div class="flex-1 p-6 bg-pink-500/5 rounded-2xl border border-pink-500/10">
+                            <span class="block font-black text-2xl mb-2">ACCROCHE</span>
+                            <span class="text-xs text-slate-400 uppercase">0-3 secondes [cite: 82, 85]</span>
+                        </div>
+                        <div class="flex-1 p-6 bg-pink-500/5 rounded-2xl border border-pink-500/10">
+                            <span class="block font-black text-2xl mb-2">CORPS</span>
+                            <span class="text-xs text-slate-400 uppercase">Valeur Actionnable [cite: 83, 86]</span>
+                        </div>
+                        <div class="flex-1 p-6 bg-pink-500/20 rounded-2xl border border-pink-500/30">
+                            <span class="block font-black text-2xl mb-2">APPEL</span>
+                            <span class="text-xs text-slate-400 uppercase">Instruction Unique [cite: 84, 87]</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass p-8 rounded-3xl">
+                    <h3 class="text-xl font-bold mb-6 text-pink-400 uppercase">Architecture de la Légende (Caption) [cite: 88]</h3>
+                    <div class="space-y-4">
+                        <div class="flex gap-4 p-4 bg-white/5 rounded-xl">
+                            <span class="text-pink-500 font-bold">L1</span>
+                            <p><strong>Rappel du Hook :</strong> Répétez l'accroche pour ceux qui scrollent aux commentaires. [cite: 91, 92]</p>
+                        </div>
+                        <div class="flex gap-4 p-4 bg-white/5 rounded-xl border border-pink-500/20">
+                            <span class="text-pink-500 font-bold">L2</span>
+                            <p><strong>CTA Immédiat :</strong> "Commente 'MOT-CLÉ' pour recevoir le guide." [cite: 99, 100]</p>
+                        </div>
+                        <div class="flex gap-4 p-4 bg-white/5 rounded-xl">
+                            <span class="text-pink-500 font-bold">Corps</span>
+                            <p><strong>Valeur Approfondie :</strong> Déconstruisez les idées reçues ou partagez votre histoire. [cite: 93, 94]</p>
+                        </div>
+                        <div class="flex gap-4 p-4 bg-white/5 rounded-xl">
+                            <span class="text-pink-500 font-bold">Fin</span>
+                            <p><strong>Conclusion :</strong> Réitérez l'instruction et créez l'urgence. [cite: 101, 102]</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <div class="glass-card rounded-3xl p-6 mb-6">
-            <h2 class="text-center font-bold text-xs uppercase text-slate-500 tracking-[0.2em] mb-6">Indicateurs de Performance</h2>
-            <div class="grid grid-cols-3 gap-2">
-                <div class="text-center p-2">
-                    <p class="text-slate-500 text-[10px] uppercase">Visibilité</p>
-                    <p class="font-bold">Vues</p>
+        <section id="ch4" class="scroll-mt-24">
+            <h2 class="text-4xl font-black mb-8 border-l-4 border-orange-500 pl-6 uppercase">04. Le Système de Vente en Story [cite: 106]</h2>
+            <div class="glass p-8 rounded-3xl space-y-12">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+                    <div class="p-4 rounded-2xl bg-orange-500/10 border border-orange-500/20">
+                        <span class="block text-xs uppercase mb-2">Intentions</span>
+                        <span class="font-bold">CONNEXION [cite: 115]</span>
+                    </div>
+                    <div class="p-4 rounded-2xl bg-orange-500/10 border border-orange-500/20">
+                        <span class="block text-xs uppercase mb-2">Intentions</span>
+                        <span class="font-bold">AUTORITÉ [cite: 124]</span>
+                    </div>
+                    <div class="p-4 rounded-2xl bg-orange-500/10 border border-orange-500/20">
+                        <span class="block text-xs uppercase mb-2">Intentions</span>
+                        <span class="font-bold">PREUVE [cite: 128]</span>
+                    </div>
+                    <div class="p-4 rounded-2xl bg-orange-500/10 border border-orange-500/20">
+                        <span class="block text-xs uppercase mb-2">Intentions</span>
+                        <span class="font-bold">OFFRE [cite: 131]</span>
+                    </div>
                 </div>
-                <div class="text-center p-2 border-x border-slate-700">
-                    <p class="text-indigo-400 text-[10px] uppercase">Autorité</p>
-                    <p class="font-bold">Saves</p>
-                </div>
-                <div class="text-center p-2">
-                    <p class="text-green-400 text-[10px] uppercase">Cash</p>
-                    <p class="font-bold">DMs</p>
+
+                <div class="relative p-8 bg-orange-500/5 rounded-3xl border-2 border-dashed border-orange-500/30">
+                    <h3 class="text-center text-xl font-black uppercase mb-8">La Séquence de Vente en 3 Slides [cite: 127]</h3>
+                    <div class="space-y-6">
+                        <div class="flex items-center gap-6">
+                            <div class="w-12 h-12 rounded-full bg-orange-500 flex items-center justify-center font-black text-xl">1</div>
+                            <div>
+                                <h4 class="font-bold">Point A : Le Problème [cite: 140]</h4>
+                                <p class="text-sm text-slate-400">Identifiez la douleur ou la frustration précise. [cite: 141]</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-6">
+                            <div class="w-12 h-12 rounded-full bg-orange-500 flex items-center justify-center font-black text-xl">2</div>
+                            <div>
+                                <h4 class="font-bold">Le Déclic : La Transformation [cite: 142]</h4>
+                                <p class="text-sm text-slate-400">Présentez le changement de perspective (moment "aha"). [cite: 143]</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-6">
+                            <div class="w-12 h-12 rounded-full bg-orange-500 flex items-center justify-center font-black text-xl">3</div>
+                            <div>
+                                <h4 class="font-bold">Point B : Le Résultat [cite: 144]</h4>
+                                <p class="text-sm text-slate-400">Preuve tangible + CTA clair et direct. [cite: 145]</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <div class="text-center p-8">
-            <p class="text-indigo-400 italic font-light mb-4">"Le perfectionnisme est l'ennemi de l'action."</p>
-            <div class="accent-gradient p-[1px] rounded-full inline-block">
-                <div class="bg-[#0f172a] px-8 py-3 rounded-full font-bold uppercase text-xs tracking-widest">
-                    Exécute dès maintenant
+        <section id="ch5" class="scroll-mt-24">
+            <h2 class="text-4xl font-black mb-8 border-l-4 border-blue-500 pl-6 uppercase">05. Psychologie & Principes de Vente [cite: 146]</h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="glass p-6 rounded-3xl">
+                    <h4 class="text-blue-400 font-bold mb-2 uppercase text-sm">La Rareté (FOMO) [cite: 151]</h4>
+                    <p class="text-sm">La story disparaît en 24h. Mentionnez explicitement la durée limitée pour pousser à l'action. [cite: 151, 153]</p>
+                </div>
+                <div class="glass p-6 rounded-3xl">
+                    <h4 class="text-blue-400 font-bold mb-2 uppercase text-sm">La Proximité [cite: 154]</h4>
+                    <p class="text-sm">Une idée par ligne. Évitez le jargon. Écrivez comme à un ami en qui vous avez confiance. [cite: 155, 156]</p>
+                </div>
+                <div class="glass p-6 rounded-3xl">
+                    <h4 class="text-blue-400 font-bold mb-2 uppercase text-sm">L'Automatisation [cite: 158]</h4>
+                    <p class="text-sm">Utilisez ManyChat pour capturer des leads automatiquement via les commentaires. [cite: 159, 160]</p>
+                </div>
+                <div class="glass p-6 rounded-3xl">
+                    <h4 class="text-blue-400 font-bold mb-2 uppercase text-sm">Répétition Stratégique [cite: 161]</h4>
+                    <p class="text-sm">Une offre doit être vue sous 3 à 5 angles marketing différents pour être comprise. [cite: 162]</p>
                 </div>
             </div>
-        </div>
+            <div class="mt-8 p-8 glass rounded-3xl border-t-4 border-indigo-500 text-center">
+                <p class="text-xl italic">"Les gens n'achètent pas des produits, ils achètent des transformations." [cite: 165]</p>
+            </div>
+        </section>
 
-    </main>
+        <section id="ch6" class="scroll-mt-24">
+            <h2 class="text-4xl font-black mb-8 border-l-4 border-green-500 pl-6 uppercase">06. L'Audit & L'Optimisation [cite: 170]</h2>
+            <div class="glass p-8 rounded-3xl space-y-8">
+                <div class="grid md:grid-cols-3 gap-6 text-center">
+                    <div class="p-6 bg-green-500/5 rounded-2xl border border-green-500/10">
+                        <span class="block text-xs uppercase text-slate-500 mb-2 font-bold">Portée [cite: 178]</span>
+                        <span class="text-lg font-bold">VUES / PARTAGES [cite: 179]</span>
+                    </div>
+                    <div class="p-6 bg-green-500/5 rounded-2xl border border-green-500/10">
+                        <span class="block text-xs uppercase text-slate-500 mb-2 font-bold">Engagement [cite: 180]</span>
+                        <span class="text-lg font-bold">ENREGISTREMENTS [cite: 181]</span>
+                    </div>
+                    <div class="p-6 bg-green-500/10 rounded-2xl border-2 border-green-500/30">
+                        <span class="block text-xs uppercase text-green-500 mb-2 font-bold font-black underline">Conversion [cite: 190]</span>
+                        <span class="text-lg font-bold">CLICS / DMs [cite: 191]</span>
+                    </div>
+                </div>
 
-    <div class="fixed bottom-0 w-full glass-card py-4 px-10 flex justify-between items-center md:hidden border-t border-white/10">
-        <i class="fas fa-home text-indigo-500"></i>
-        <i class="fas fa-search text-slate-400"></i>
-        <i class="fas fa-plus-square text-slate-400"></i>
-        <i class="fas fa-heart text-slate-400"></i>
-        <i class="fas fa-user text-slate-400"></i>
+                <div class="space-y-4">
+                    <h3 class="font-bold text-green-400 uppercase tracking-widest text-sm">Routine d'Audit (Tous les 1-2 mois) [cite: 183]</h3>
+                    <ul class="space-y-3">
+                        <li class="flex gap-4 p-4 bg-white/5 rounded-xl">
+                            <span class="text-green-500 font-bold">1</span>
+                            <p><strong>Analysez vos 5 meilleurs posts :</strong> Trouvez les patterns gagnants. [cite: 184, 186]</p>
+                        </li>
+                        <li class="flex gap-4 p-4 bg-white/5 rounded-xl">
+                            <span class="text-green-500 font-bold">2</span>
+                            <p><strong>Recyclez intelligemment :</strong> Reprenez un post d'il y a 6 mois et reformulez-le. [cite: 187, 188]</p>
+                        </li>
+                        <li class="flex gap-4 p-4 bg-red-500/10 rounded-xl">
+                            <span class="text-red-500 font-bold">3</span>
+                            <p><strong>Épurez sans pitié :</strong> Si un contenu ne convertit jamais, supprimez-le. [cite: 193, 194]</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="scroll-mt-24">
+            <div class="bg-indigo-600 rounded-[3rem] p-12 text-center shadow-2xl shadow-indigo-500/20">
+                <h2 class="text-4xl font-black mb-6 uppercase">PASSEZ À L'ACTION MAINTENANT [cite: 199]</h2>
+                <p class="text-xl mb-12 opacity-90 italic">"La clarté bat l'intelligence. Soyez structuré, clair et intentionnel." [cite: 200, 201, 202]</p>
+                
+                <div class="grid md:grid-cols-3 gap-8 text-left">
+                    <div class="bg-white/10 p-6 rounded-3xl backdrop-blur-sm">
+                        <h4 class="font-black text-yellow-400 mb-4 uppercase text-xs">Aujourd'hui [cite: 209]</h4>
+                        <p class="text-sm">Auditez votre profil et réécrivez votre bio "J'aide [cible] à [résultat] via [méthode]". [cite: 210]</p>
+                    </div>
+                    <div class="bg-white/10 p-6 rounded-3xl backdrop-blur-sm">
+                        <h4 class="font-black text-yellow-400 mb-4 uppercase text-xs">Cette Semaine [cite: 208]</h4>
+                        <p class="text-sm">Créez une séquence de 3 stories Point A → Déclic → Point B avec CTA direct. [cite: 213]</p>
+                    </div>
+                    <div class="bg-white/10 p-6 rounded-3xl backdrop-blur-sm">
+                        <h4 class="font-black text-yellow-400 mb-4 uppercase text-xs">Ce Mois-ci [cite: 214]</h4>
+                        <p class="text-sm">Produisez 3 réels (Accroche → Valeur → Action) avec 3 types de hooks différents. [cite: 215, 216]</p>
+                    </div>
+                </div>
+
+                <div class="mt-12 p-6 bg-black/20 rounded-2xl inline-block">
+                    <p class="font-bold text-yellow-400">RAPPEL : LE PERFECTIONNISME EST L'ENNEMI DE L'ACTION. [cite: 221]</p>
+                </div>
+            </div>
+        </section>
+
     </div>
+
+    <footer class="py-20 text-center border-t border-white/5 glass">
+        <p class="text-slate-500 text-xs tracking-widest uppercase mb-4">La Bible du Créateur Digital - Votre référence permanente [cite: 223]</p>
+        <p class="text-indigo-400 font-bold">LE SUCCÈS APPARTIENT À CEUX QUI EXÉCUTENT AVEC CONSTANCE. [cite: 225]</p>
+    </footer>
 
 </body>
 </html>
